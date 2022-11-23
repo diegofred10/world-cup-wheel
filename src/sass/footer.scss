@@ -1,12 +1,14 @@
 footer{
-    width: 100%;
-    height: 10vh;
+    width: 90%;
+    height: 5em;
     display: flex;   
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: white;
-    background-color: black;
+    background: rgb(132,21,53);
+    background: linear-gradient(90deg, rgba(132,21,53,1) 0%, rgba(48,6,30,1) 100%, rgba(0,212,255,1) 100%);
+    ;
 }
 
 #copyright{
@@ -21,6 +23,12 @@ footer{
     justify-content: flex-end;
 }
 
+.icon{
+  font-size: 2em;  
+}
+.icon-copy{
+    font-size: 1.2em;
+}
 .fa-brands{
     margin: 5%;
 }
