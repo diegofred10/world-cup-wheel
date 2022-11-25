@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "quatar";
+    src: url("../assets/fonts/Qatar2022/Qatar2022Arabic-Bold.ttf")
+}
+
+h1 {
+    font-family: "quatar";
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+header{
+    height: 5em;
+    background: rgb(132,21,53);
+background: linear-gradient(90deg, rgba(132,21,53,1) 0%, rgba(48,6,30,1) 100%, rgba(0,212,255,1) 100%);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+img {
+    height: 6em;
+    position: relative;
+    right: 64%;
+}
+
