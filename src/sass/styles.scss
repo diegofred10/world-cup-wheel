@@ -3,4 +3,26 @@
 @use "./wheel.scss";
 @use "./boxResultados.scss";
 @use "./fonts";
-@use"footer";
+@use "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  //   align-items: start;
+  width: 90%;
+  margin: 0 auto;
+}
