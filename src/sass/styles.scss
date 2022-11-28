@@ -1,2 +1,7 @@
 @use "./container1";
 @use "./src/sass/header";
+@use "./wheel.scss";
+
+body{
+    // display: flex;
+}
