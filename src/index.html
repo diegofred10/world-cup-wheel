@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World cup wheel</title>
-    <link rel="stylesheet" href="./sass/styles.scss">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <script src="https://kit.fontawesome.com/8b36fc8439.js" crossorigin="anonymous"></script>
 
-  </head>
-  <body>
-    <header>
-      <h1>World Cup Wheel 2022 </h1>
-      <img src="assets/png-transparent-world-cup-world-cup-cup-trophy-thumbnail.png">
-  
-    </header>
-    <section class="container-winners">
-      <div class="last-winner">
-      <div class="winners-list"></div>  
-      </div>
-    </section>
-    
-    <section class="wheel">
-        <!-- <div src="./assets/play.png" alt="simbolo de start" class="play"> -->
-          <div class="img">
-            <i class="fa-solid fa-circle-play icono-play"></i>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World cup wheel</title>
+  <link rel="stylesheet" href="./sass/styles.scss">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <script src="https://kit.fontawesome.com/8b36fc8439.js" crossorigin="anonymous"></script>
+</head>
 
-          </div>
-        </section>
-    <script type="module" src="./src/js/main.js"></script>
-  </body>
+<body>
+  <header>
+    <h1>World Cup Wheel 2022 </h1>
+    <img src="assets/png-transparent-world-cup-world-cup-cup-trophy-thumbnail.png">
+
+  </header>
+  <section class="container-winners">
+    <div class="last-winner">
+      <div class="winners-list"></div>
+    </div>
+  </section>
+
+  <section class="wheel">
+    <div class="img">
+      <i class="fa-solid fa-circle-play icono-play"></i>
+
+    </div>
+  </section>
+  </div>
+
+  <section class="container-results">
+    <div class="container-countries-and-icons">
+      <ul class="container-list">
+        <li class="list-countries">
+          <div class="icon-delete"></div>
+          <div class="icon-modify"></div>
+        </li>
+      </ul>
+    </div>
+    <div class="container-add-countries">
+      <input type="text" name="input-country" class="input-country" placeholder="Agrega un país" />
+      <button class="add-country-button">Agregar</button>
+    </div>
+  </section>
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
 </html>
-
