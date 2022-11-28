@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World cup wheel</title>
-    <link rel="stylesheet" href="./sass/styles.scss">
-    <link rel="stylesheet" href="./src/css/reset.css">
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./sass/styles.scss" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <script type="module" src="./src/js/main.js"></script>
   </head>
   <header>
     <h1>World Cup Wheel 2022 </h1>
@@ -21,6 +22,27 @@
 
       </div>
     </div>
+     
+    <section class="container-results">
+      <div class="container-countries-and-icons">
+        <ul class="container-list">
+          <li class="list-countries">
+            <div class="icon-delete"></div>
+            <div class="icon-modify"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="container-add-countries">
+        <input
+          type="text"
+          name="input-country"
+          class="input-country"
+          placeholder="Agrega un país"
+        />
+        <button class="add-country-button">Agregar</button>
+      </div>
+    </section>
+
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
