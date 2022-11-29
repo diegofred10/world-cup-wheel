@@ -1,0 +1,31 @@
+.wheel {
+    width:30em;
+    height:30em;
+    background-color: #EC1550;
+    border-radius: 50%; 
+    margin: -30em auto;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play {
+    border-radius: 50%;
+}
+
+.img{
+    width:10em;
+    height:10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-play {
+    font-size: 5em;
+    cursor: pointer;
+    &:hover {
+        color: #34D7B8;
+    }
+
+}
