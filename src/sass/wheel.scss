@@ -1,31 +1,38 @@
 .wheel {
-    width:30em;
-    height:30em;
-    background-color: #EC1550;
-    border-radius: 50%; 
-    margin: -30em auto;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 35em;
+  height: 35em;
+  background-color: #ec1550;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .play {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
-.img{
-    width:10em;
-    height:10em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.img {
+  width: 10em;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icono-play {
-    font-size: 5em;
-    cursor: pointer;
-    &:hover {
-        color: #34D7B8;
-    }
+  font-size: 5em;
+  height: 58%;
+  cursor: pointer;
+  align-self: center;
+  &:hover {
+    color: #34d7b8;
+  }
+}
 
+.icon-arrow {
+  font-size: 4em;
+  justify-self: start;
+  
 }

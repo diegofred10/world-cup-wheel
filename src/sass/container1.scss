@@ -1,28 +1,29 @@
 .container-winners {
-width: 20em ;
-height: 40em;
-background-image: url("../assets/fondo-ganadores.png");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 65%;
-display: flex;
-justify-content: center;
-
+  width: 20em;
+  height: 35em;
+  background-image: url("../assets/fondo-ganadores.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 65%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .last-winner {
-    width: 13em ;
-    height: 4em;
-    background-color: aquamarine;
-    align-self: start;
-    margin-top: 3em;
+  border-radius: 5px;
+  width: 13em;
+  height: 4em;
+  background-color: aquamarine;
+  align-self: start;
+  margin-top: 3em;
 }
 
 .winners-list {
-    width: 13em;
-    height: 24em;
-    background-color: #EC1550; 
-    align-self: start;
-    margin-top: 8em;
-    border: 2px solid aquamarine;
+  border-radius: 5px;
+  width: 13em;
+  height: 20em;
+  background-color: aquamarine;
+  align-self: start;
+  margin-top: 8em;
 }
