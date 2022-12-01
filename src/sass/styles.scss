@@ -1,9 +1,10 @@
 @use "./container1";
 @use "./src/sass/header";
-@use "./wheel.scss";
+@use "./main-content";
 @use "./boxResultados.scss";
 @use "./fonts";
 @use "footer";
+
 
 * {
   margin: 0;
@@ -17,6 +18,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+    background: rgb(25, 4, 4);
+
 }
 
 .content {

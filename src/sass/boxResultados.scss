@@ -19,9 +19,16 @@
     background-color: aquamarine;
     border-radius: 5px;
     margin-top: 2.2em;
-    .list-countries {
-      list-style: none;
+    .container-list{
+      margin-top: 1em;
+      overflow: scroll;
     }
+      .container-list-country{
+        list-style: none;
+        padding: .2em 1em;
+
+      }
+  
   }
 
   .container-add-countries {
@@ -31,7 +38,6 @@
     align-items: center;
     height: 20%;
     width: 75%;
-
     .input-country {
       width: 92%;
       font-family: sans-serif;
