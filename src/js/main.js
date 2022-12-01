@@ -10,6 +10,7 @@ const buttonAdd = document.querySelector(".add-country-button");
 const inputWinner = document.querySelector(".main-content__winner");
 const buttonPlay = document.querySelector(".main-content__button");
 const inputLastWinner = document.querySelector(".last-winner");
+const winnerList = document.querySelector(".winners-list");
 
 
 let arrCountries = [];
@@ -18,6 +19,9 @@ buttonAdd.addEventListener("click", () => {
     const buttonModify = `<i class="fa-solid fa-pen icon-modify"></i>`;
     const country = document.querySelector(".input-country");
     const listCountries = document.querySelector(".container-list");
+    if (country.value == "") {
+        return alert("Please enter a country");
+    }
     listCountries.innerHTML += `<li class="container-list-country">${country.value}  ${buttonModify} ${buttonDelete}</li >`;
     const actionDelete = document.querySelectorAll(".icon-delete");
 
@@ -33,20 +37,24 @@ buttonAdd.addEventListener("click", () => {
 
 
 });
-arrWinners = []
-buttonPLay.addEventListener("click", () => {
-    arrWinners.push(last_winner)
-
-
-})
+const arrWinners = []
+// buttonPLay.addEventListener("click", () => {
+// })
 
 buttonPlay.addEventListener("click", () => {
+    if (arrCountries.length === 0) {
+        return alert("Please, enter a country");
+    }
 
     let rNum = (Math.floor(Math.random() * arrCountries.length + 1));
 
     let rNum2 = parseInt(rNum) - 1;
-
-
+    inputWinner.innerHTML = arrCountries[rNum2];
+    inputLastWinner.innerHTML = inputWinner.innerHTML;
+    arrWinners.push(inputLastWinner.innerHTML);
+    console.log(inputWinner.innerHTML);
+    winnerList.innerHTML += `<li class="winner-country">${inputWinner.innerHTML}</li >`;
+    
 });
 
 
@@ -54,9 +62,8 @@ buttonPlay.addEventListener("click", () => {
 
 
 
-buttonPlay.addEventListener("click", () => {
-    inputLastWinner.innerHTML = inputWinner.innerHTML;
 
-})
+
+
 
 

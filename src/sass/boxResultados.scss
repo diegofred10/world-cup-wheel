@@ -20,6 +20,7 @@
     background-color: aquamarine;
     border-radius: 5px;
     margin-top: 2.2em;
+    overflow-y: scroll;
     .container-list{
       margin-top: 1em;
     }
@@ -79,5 +80,31 @@
   }
   .icon-modify {
     
+  }
+
+  .container-countries-and-icons::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+  .container-countries-and-icons::-webkit-scrollbar:vertical {
+    width:10px;
+  }
+  
+  .container-countries-and-icons::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+  } 
+  
+  .container-countries-and-icons::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+  
+  .container-countries-and-icons::-webkit-scrollbar-thumb {
+    background-color:  rgba(132, 21, 53, 1);
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+  }
+  
+  .container-countries-and-icons::-webkit-scrollbar-track {
+    border-radius: 10px;  
   }
 }
