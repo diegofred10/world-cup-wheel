@@ -7,7 +7,9 @@ Que aparezca en el recuadro del último ganador y también se añada a la lista 
  */
 
 const buttonAdd = document.querySelector(".add-country-button");
-
+const inputWinner = document.querySelector(".main-content__winner");
+const buttonPlay = document.querySelector(".main-content__button");
+const inputLastWinner = document.querySelector(".last-winner");
 
 buttonAdd.addEventListener("click", () =>  {
     const country = document.querySelector(".input-country").value;
@@ -15,5 +17,10 @@ buttonAdd.addEventListener("click", () =>  {
     listCountries.innerHTML += `<li class="container-list-country">${country}</li>`;
 }) 
 
+
+buttonPlay.addEventListener("click", () => {
+inputLastWinner.innerHTML = inputWinner.innerHTML;
+
+})
 
 
