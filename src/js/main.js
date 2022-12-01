@@ -7,28 +7,29 @@ Que aparezca en el recuadro del último ganador y también se añada a la lista 
  */
 
 const buttonAdd = document.querySelector(".add-country-button");
+const inputWinner = document.querySelector(".main-content__winner");
 const buttonPlay = document.querySelector(".main-content__button");
+const inputLastWinner = document.querySelector(".last-winner");
 
-let arrCountries=[];
-buttonAdd.addEventListener("click", () =>  {
-    const buttonDelete=  `<i class="fa-solid fa-trash icon-delete"></i>`;
-    const buttonModify= `<i class="fa-solid fa-pen icon-modify"></i>`;
+
+let arrCountries = [];
+buttonAdd.addEventListener("click", () => {
+    const buttonDelete = `<i class="fa-solid fa-trash icon-delete"></i>`;
+    const buttonModify = `<i class="fa-solid fa-pen icon-modify"></i>`;
     const country = document.querySelector(".input-country");
     const listCountries = document.querySelector(".container-list");
     listCountries.innerHTML += `<li class="container-list-country">${country.value}  ${buttonModify} ${buttonDelete}</li >`;
-    const actionDelete= document.querySelectorAll(".icon-delete");
-    
+    const actionDelete = document.querySelectorAll(".icon-delete");
+
     arrCountries.push(country.value);
-    country.value="";
-   
-actionDelete.forEach(el=>el.addEventListener("click",(e)=>{
-    listCountries.removeChild(e.path[1]);
-    arrCountries.pop(e.path[1]);
-    
-    
+    country.value = "";
+
+    actionDelete.forEach(el => el.addEventListener("click", (e) => {
+        listCountries.removeChild(e.path[1]);
+        arrCountries.pop(e.path[1]);
 
 
-}))
+    }))
 
 
 });
@@ -39,18 +40,23 @@ buttonPLay.addEventListener("click", () => {
 
 })
 
-buttonPlay.addEventListener("click", () =>  {
- 
-    let rNum = (Math.floor(Math.random() * arrCountries.length+1));
-    
-   let rNum2 = parseInt(rNum) -1;
-  
-    
+buttonPlay.addEventListener("click", () => {
+
+    let rNum = (Math.floor(Math.random() * arrCountries.length + 1));
+
+    let rNum2 = parseInt(rNum) - 1;
+
+
 });
 
 
-    
- 
 
+
+
+
+buttonPlay.addEventListener("click", () => {
+    inputLastWinner.innerHTML = inputWinner.innerHTML;
+
+})
 
 

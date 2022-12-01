@@ -7,16 +7,16 @@
   background-position: 65%;
   border-radius: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .last-winner {
   border-radius: 5px;
   width: 13em;
-  height: 4em;
+  height: 5em;
   background-color: aquamarine;
-  align-self: start;
-  margin-top: 3em;
 }
 
 .winners-list {
@@ -24,6 +24,5 @@
   width: 13em;
   height: 20em;
   background-color: aquamarine;
-  align-self: start;
-  margin-top: 8em;
+  margin-top: 3em;
 }
