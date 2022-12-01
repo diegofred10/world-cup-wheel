@@ -1,4 +1,6 @@
 .container-winners {
+  font-family: "quatar";
+
   width: 20em;
   height: 35em;
   background-image: url("../assets/fondo-ganadores.png");
@@ -10,7 +12,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .last-winner {
@@ -23,7 +24,7 @@
   align-items: center;
   width: 65%;
   color: rgba(132, 21, 53, 1);
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .winners-list {
@@ -32,7 +33,7 @@
   height: 20em;
   background-color: aquamarine;
   margin-top: 3em;
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
 
 .winner-country {
@@ -40,7 +41,6 @@
   padding: 0.5em;
   margin-left: 1.8em;
   font-weight: bold;
-
 }
 
 .winners-list::-webkit-scrollbar {
@@ -48,24 +48,24 @@
 }
 
 .winners-list::-webkit-scrollbar:vertical {
-  width:10px;
+  width: 10px;
 }
 
-.winners-list::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+.winners-list::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
   display: none;
-} 
+}
 
 .winners-list::-webkit-scrollbar:horizontal {
   height: 10px;
 }
 
 .winners-list::-webkit-scrollbar-thumb {
-  background-color:  rgba(132, 21, 53, 1);
+  background-color: rgba(132, 21, 53, 1);
   border-radius: 20px;
   border: 2px solid #f1f2f3;
 }
 
 .winners-list::-webkit-scrollbar-track {
-  border-radius: 10px;  
+  border-radius: 10px;
 }
-

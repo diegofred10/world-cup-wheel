@@ -12,58 +12,44 @@ const buttonPlay = document.querySelector(".main-content__button");
 const inputLastWinner = document.querySelector(".last-winner");
 const winnerList = document.querySelector(".winners-list");
 
-
 let arrCountries = [];
 buttonAdd.addEventListener("click", () => {
-    const buttonDelete = `<i class="fa-solid fa-trash icon-delete"></i>`;
-    const buttonModify = `<i class="fa-solid fa-pen icon-modify"></i>`;
-    const country = document.querySelector(".input-country");
-    const listCountries = document.querySelector(".container-list");
-    if (country.value == "") {
-        return alert("Please enter a country");
-    }
-    listCountries.innerHTML += `<li class="container-list-country">${country.value}  ${buttonModify} ${buttonDelete}</li >`;
-    const actionDelete = document.querySelectorAll(".icon-delete");
+  const buttonDelete = `<i class="fa-solid fa-trash icon-delete"></i>`;
+  const buttonModify = `<i class="fa-solid fa-pen icon-modify"></i>`;
+  const country = document.querySelector(".input-country");
+  const listCountries = document.querySelector(".container-list");
+  if (country.value == "") {
+    return alert("Please enter a country");
+  }
+  listCountries.innerHTML += `<li class="container-list-country">${country.value} <div> ${buttonModify} ${buttonDelete}</li ></div>`;
+  const actionDelete = document.querySelectorAll(".icon-delete");
 
-    arrCountries.push(country.value);
-    country.value = "";
+  arrCountries.push(country.value);
+  country.value = "";
 
-    actionDelete.forEach(el => el.addEventListener("click", (e) => {
-        listCountries.removeChild(e.path[1]);
-        arrCountries.pop(e.path[1]);
-
-
-    }))
-
-
+  actionDelete.forEach((el) =>
+    el.addEventListener("click", (e) => {
+      listCountries.removeChild(e.path[2]);
+      arrCountries.pop();
+      //   console.log(e.path[1].textContent);
+    })
+  );
 });
-const arrWinners = []
+const arrWinners = [];
 // buttonPLay.addEventListener("click", () => {
 // })
 
 buttonPlay.addEventListener("click", () => {
-    if (arrCountries.length === 0) {
-        return alert("Please, enter a country");
-    }
+  if (arrCountries.length === 0) {
+    return alert("Please, enter a country");
+  }
 
-    let rNum = (Math.floor(Math.random() * arrCountries.length + 1));
+  let rNum = Math.floor(Math.random() * arrCountries.length + 1);
 
-    let rNum2 = parseInt(rNum) - 1;
-    inputWinner.innerHTML = arrCountries[rNum2];
-    inputLastWinner.innerHTML = inputWinner.innerHTML;
-    arrWinners.push(inputLastWinner.innerHTML);
-    console.log(inputWinner.innerHTML);
-    winnerList.innerHTML += `<li class="winner-country">${inputWinner.innerHTML}</li >`;
-    
+  let rNum2 = parseInt(rNum) - 1;
+  inputWinner.innerHTML = arrCountries[rNum2];
+  inputLastWinner.innerHTML = inputWinner.innerHTML;
+  arrWinners.push(inputLastWinner.innerHTML);
+  console.log(inputWinner.innerHTML);
+  winnerList.innerHTML += `<li class="winner-country">${inputWinner.innerHTML}</li >`;
 });
-
-
-
-
-
-
-
-
-
-
-
