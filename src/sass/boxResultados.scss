@@ -12,6 +12,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  
 
   .container-countries-and-icons {
     height: 60%;
@@ -69,5 +70,14 @@
         background-color: #22927d;
       }
     }
+  }
+  .icon-delete {
+    margin: 0.5em;
+    &:hover{
+      color: red;
+    }cursor: pointer;
+  }
+  .icon-modify {
+    
   }
 }
