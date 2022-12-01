@@ -27,3 +27,26 @@ body {
   width: 90%;
   margin: 2em auto;
 }
+
+@media (max-width: 1465px) {
+  .main-content {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .container-results,
+  .container-winners {
+    width: 15em;
+  }
+
+  @media (max-width: 1050px) {
+    .container-results,
+    .container-winners {
+      width: 10em;
+    }
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
