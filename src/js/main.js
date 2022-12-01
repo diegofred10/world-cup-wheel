@@ -7,6 +7,7 @@ Que aparezca en el recuadro del último ganador y también se añada a la lista 
  */
 
 const buttonAdd = document.querySelector(".add-country-button");
+const buttonPlay = document.querySelector(".main-content__button");
 
 let arrCountries=[];
 buttonAdd.addEventListener("click", () =>  {
@@ -29,6 +30,18 @@ actionDelete.forEach(el=>el.addEventListener("click",(e)=>{
 
 });
 
+buttonPlay.addEventListener("click", () =>  {
+ 
+    let rNum = (Math.floor(Math.random() * arrCountries.length+1));
+    
+   let rNum2 = parseInt(rNum) -1;
+  
+    
+});
+
+
+    
+ 
 
 
 
