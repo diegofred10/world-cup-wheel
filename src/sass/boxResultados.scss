@@ -12,6 +12,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  
 
   .container-countries-and-icons {
     height: 60%;
@@ -21,7 +22,7 @@
     margin-top: 2.2em;
     .container-list{
       margin-top: 1em;
-      overflow: scroll;
+      
     }
       .container-list-country{
         list-style: none;

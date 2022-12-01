@@ -8,7 +8,7 @@ Que aparezca en el recuadro del último ganador y también se añada a la lista 
 
 const buttonAdd = document.querySelector(".add-country-button");
 
-
+let arrCountries=[];
 buttonAdd.addEventListener("click", () =>  {
     const buttonDelete=  `<i class="fa-solid fa-trash icon-delete"></i>`;
     const buttonModify= `<i class="fa-solid fa-pen icon-modify"></i>`;
@@ -16,11 +16,15 @@ buttonAdd.addEventListener("click", () =>  {
     const listCountries = document.querySelector(".container-list");
     listCountries.innerHTML += `<li class="container-list-country">${country.value}  ${buttonModify} ${buttonDelete}</li >`;
     const actionDelete= document.querySelectorAll(".icon-delete");
-
+    
+    arrCountries.push(country.value);
     country.value="";
    
 actionDelete.forEach(el=>el.addEventListener("click",(e)=>{
     listCountries.removeChild(e.path[1]);
+    arrCountries.pop(e.path[1]);
+
+
 }))
 
 });
