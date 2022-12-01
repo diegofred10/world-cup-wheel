@@ -10,12 +10,9 @@ const buttonAdd = document.querySelector(".add-country-button");
 
 
 buttonAdd.addEventListener("click", () =>  {
-    const country = document.querySelector(".input-country");
-    const countryValue = country.value;
+    const country = document.querySelector(".input-country").value;
     const listCountries = document.querySelector(".container-list");
-    listCountries.innerHTML += `<li class="container-list-country">${countryValue}</li>`;
-
-    console.log
+    listCountries.innerHTML += `<li class="container-list-country">${country}</li>`;
 }) 
 
 
