@@ -69,4 +69,13 @@
       }
     }
   }
+  .icon-delete {
+    margin: 0.5em;
+    &:hover{
+      color: red;
+    }cursor: pointer;
+  }
+  .icon-modify {
+    
+  }
 }

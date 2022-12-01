@@ -10,13 +10,21 @@ const buttonAdd = document.querySelector(".add-country-button");
 
 
 buttonAdd.addEventListener("click", () =>  {
+    const buttonDelete=  `<i class="fa-solid fa-trash icon-delete"></i>`;
+    const buttonModify= `<i class="fa-solid fa-pen icon-modify"></i>`;
     const country = document.querySelector(".input-country");
-    const countryValue = country.value;
     const listCountries = document.querySelector(".container-list");
-    listCountries.innerHTML += `<li class="container-list-country">${countryValue}</li>`;
+    listCountries.innerHTML += `<li class="container-list-country">${country.value}  ${buttonModify} ${buttonDelete}</li >`;
+    const actionDelete= document.querySelectorAll(".icon-delete");
 
-    console.log
-}) 
+    country.value="";
+   
+actionDelete.forEach(el=>el.addEventListener("click",(e)=>{
+    listCountries.removeChild(e.path[1]);
+}))
+
+});
+
 
 
 
