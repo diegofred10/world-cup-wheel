@@ -24,11 +24,20 @@ buttonAdd.addEventListener("click", () =>  {
 actionDelete.forEach(el=>el.addEventListener("click",(e)=>{
     listCountries.removeChild(e.path[1]);
     arrCountries.pop(e.path[1]);
+    
+    
 
 
 }))
 
+
 });
+arrWinners = []
+buttonPLay.addEventListener("click", () => {
+    arrWinners.push(last_winner)
+
+
+})
 
 buttonPlay.addEventListener("click", () =>  {
  
