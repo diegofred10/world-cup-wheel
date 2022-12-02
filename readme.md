@@ -13,4 +13,10 @@ Que aparezca en el recuadro del último ganador y también se añada a la lista 
 
 Este proyecto utiliza vite
 
-Inserte el comando npm install para descargar los ficheros.
+Inserte el comando "npm install" para descargar los ficheros.
+
+Las herramientas utilizadas fueron
+-HTML
+-SASS
+-JS
+-VITE
