@@ -21,23 +21,20 @@ buttonAdd.addEventListener("click", () => {
   if (country.value == "") {
     return alert("Please enter a country");
   }
+
   listCountries.innerHTML += `<li class="container-list-country">${country.value} <div> ${buttonModify} ${buttonDelete}</li ></div>`;
   const actionDelete = document.querySelectorAll(".icon-delete");
 
-  arrCountries.push(country.value);
   country.value = "";
 
   actionDelete.forEach((el) =>
     el.addEventListener("click", (e) => {
       listCountries.removeChild(e.path[2]);
       arrCountries.pop();
-      //   console.log(e.path[1].textContent);
     })
   );
 });
 const arrWinners = [];
-// buttonPLay.addEventListener("click", () => {
-// })
 
 buttonPlay.addEventListener("click", () => {
   if (arrCountries.length === 0) {

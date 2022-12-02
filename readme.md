@@ -10,4 +10,7 @@ Crear una función que elimine el partcipante en la lista y en la ruleta
 Crear un botón que haga girar la ruleta y se detenga en algunos segundos
 Que al detenerse, elimine al ganador en la ruleta y lo añada a la lista de ganadores
 Que aparezca en el recuadro del último ganador y también se añada a la lista de ganadores.
- 
+
+Este proyecto utiliza vite
+
+Inserte el comando npm install para descargar los ficheros.
