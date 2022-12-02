@@ -21,11 +21,10 @@ buttonAdd.addEventListener("click", () => {
   if (country.value == "") {
     return alert("Please enter a country");
   }
+  arrCountries.push(country.value);
 
   listCountries.innerHTML += `<li class="container-list-country">${country.value} <div> ${buttonModify} ${buttonDelete}</li ></div>`;
   const actionDelete = document.querySelectorAll(".icon-delete");
-
-  country.value = "";
 
   actionDelete.forEach((el) =>
     el.addEventListener("click", (e) => {
@@ -33,13 +32,15 @@ buttonAdd.addEventListener("click", () => {
       arrCountries.pop();
     })
   );
+  console.log(arrCountries);
+  country.value = "";
 });
 const arrWinners = [];
 
 buttonPlay.addEventListener("click", () => {
-  if (arrCountries.length === 0) {
-    return alert("Please, enter a country");
-  }
+  // if (arrCountries.length === 0) {
+  //   return alert("Please, enter a country");
+  // }
 
   let rNum = Math.floor(Math.random() * arrCountries.length + 1);
 
